@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mission4and5</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div>
+        <a asp-controller="Home" asp-action="Index">Home</a><br />
+        <a asp-controller="Home" asp-action="Podcast">Podcast</a><br />
+        <a asp-controller="Home" asp-action="MovieCollection">Add a Movie to the Collection</a><br />
+        <a asp-controller="Home" asp-action="MovieDatabase">View Current Database</a>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
